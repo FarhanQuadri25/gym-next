@@ -7,11 +7,11 @@ import { useState } from "react";
 import Nav from "./nav/index";
 import { AnimatePresence } from "framer-motion";
 
-export default function index() {
+export default function Header() {
   const [isActive, setIsActive] = useState(false);
   const closeNavBar = () => {
-    setIsActive(prevState => !prevState);
-  }
+    setIsActive((prevState) => !prevState);
+  };
   return (
     <div className="">
       {/* <Image src={logo} alt="logo" width={80} height={80} /> */}
@@ -23,7 +23,9 @@ export default function index() {
             }`}
           ></div>
         </div>
-        <AnimatePresence mode="wait">{isActive && <Nav closeNavBar={closeNavBar} />}</AnimatePresence>
+        <AnimatePresence mode="wait">
+          {isActive && <Nav closeNavBar={closeNavBar} />}
+        </AnimatePresence>
       </div>
     </div>
   );
