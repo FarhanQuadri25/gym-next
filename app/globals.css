@@ -2,3 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+section {
+  padding-inline: 1em;
+}
+
+@layer base {
+  @font-face {
+    font-family: "general";
+    src: url("/fonts/general.woff2") format("woff2");
+  }
+}

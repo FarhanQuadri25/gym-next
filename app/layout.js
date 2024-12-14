@@ -1,5 +1,5 @@
-import "./globals.css";
 import "@/sass/main.scss";
+import "./globals.css";
 
 export const metadata = {
   title: "Create Next App",

@@ -3,17 +3,17 @@ import styles from "./style.module.scss";
 import NewLink from "@/components/navlink";
 import { motion } from "framer-motion";
 import { menuSlide } from "@/anim";
-import Curve from '@/components/curve';
+import Curve from "@/components/curve";
 
-export default function index({closeNavBar}) {
+export default function index({ closeNavBar }) {
   return (
     <>
       <motion.div
         variants={menuSlide}
         animate="enter"
         exit="exit"
-        initial='initial'
-        className={styles.menu}
+        initial="initial"
+        className={`${styles.menu} shadow-2xl`}
       >
         <div className={styles.body}>
           <div className={styles.nav}>
@@ -21,11 +21,15 @@ export default function index({closeNavBar}) {
               <p className="text-xl">Navigation</p>
             </div>
             {DATA.map((data) => (
-              <NewLink key={data.id} data={{ ...data }} closeNavBar={closeNavBar} />
+              <NewLink
+                key={data.id}
+                data={{ ...data }}
+                closeNavBar={closeNavBar}
+              />
             ))}
           </div>
         </div>
-        <Curve/>
+        <Curve />
       </motion.div>
     </>
   );

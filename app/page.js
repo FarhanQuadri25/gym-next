@@ -1,19 +1,17 @@
-import Header from "@/components/header";
 import Home from "@/components/home";
 import About from "@/components/about";
-import Pricing from '@/components/pricing'
-import Gallery from '@/components/gallery'
-import Contact from '@/components/contact';
+import Pricing from "@/components/pricing";
+import Gallery from "@/components/gallery";
+import Contact from "@/components/contact";
 
 export default function HomePage() {
   return (
-    <>
-      <Header />
+    <section>
       <Home />
       <About />
-      <Pricing/>
-      <Gallery/>
-      <Contact/>
-    </>
+      <Pricing />
+      <Gallery />
+      <Contact />
+    </section>
   );
 }

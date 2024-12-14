@@ -13,20 +13,15 @@ export default function Header() {
     setIsActive((prevState) => !prevState);
   };
   return (
-    <div className="">
-      {/* <Image src={logo} alt="logo" width={80} height={80} /> */}
-      <div className={`flex justify-between items-center ${styles.header}`}>
-        <div onClick={() => setIsActive(!isActive)} className={styles.button}>
-          <div
-            className={`${styles.burger} ${
-              isActive ? styles.burgerActive : ""
-            }`}
-          ></div>
-        </div>
-        <AnimatePresence mode="wait">
-          {isActive && <Nav closeNavBar={closeNavBar} />}
-        </AnimatePresence>
+    <div className={`flex justify-between items-center  ${styles.header}`}>
+      <div onClick={() => setIsActive(!isActive)} className={styles.button}>
+        <div
+          className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}
+        ></div>
       </div>
+      <AnimatePresence mode="wait">
+        {isActive && <Nav closeNavBar={closeNavBar} />}
+      </AnimatePresence>
     </div>
   );
 }
