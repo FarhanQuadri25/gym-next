@@ -6,12 +6,7 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        tajawal: ["Tajawal", "sans-serif"],
-        general: ["general", "sans-serif"],
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };
