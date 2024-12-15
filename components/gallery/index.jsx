@@ -69,7 +69,7 @@ export default function index() {
           className={`${styles.gallery__item} ${styles.gallery__item__6}`}
         >
           <Image
-            src="/newimg/img-1 (6).jpeg"
+            src="/newimg/img-1 (7).jpeg"
             alt="sixth-img"
             width={300}
             height={300}
