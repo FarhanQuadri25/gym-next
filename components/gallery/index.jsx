@@ -14,7 +14,7 @@ export default function index() {
           className={`${styles.gallery__item} ${styles.gallery__item__1}`}
         >
           <Image
-            src="/newimg/img-1 (1).jpeg"
+            src="/newimg/img-1.jpeg"
             alt="first-img"
             width={300}
             height={300}
@@ -25,7 +25,7 @@ export default function index() {
           className={`${styles.gallery__item} ${styles.gallery__item__2}`}
         >
           <Image
-            src="/newimg/img-1 (2).jpeg"
+            src="/newimg/img-2.jpeg"
             alt="second-img"
             width={300}
             height={300}
@@ -36,7 +36,7 @@ export default function index() {
           className={`${styles.gallery__item} ${styles.gallery__item__3}`}
         >
           <Image
-            src="/newimg/img-1 (3).jpeg"
+            src="/newimg/img-3.jpeg"
             alt="third-img"
             width={300}
             height={300}
@@ -47,7 +47,7 @@ export default function index() {
           className={`${styles.gallery__item} ${styles.gallery__item__4}`}
         >
           <Image
-            src="/newimg/img-1 (4).jpeg"
+            src="/newimg/img-4.jpeg"
             alt="fourth-img"
             width={350}
             height={400}
@@ -58,7 +58,7 @@ export default function index() {
           className={`${styles.gallery__item} ${styles.gallery__item__5}`}
         >
           <Image
-            src="/newimg/img-1 (5).jpeg"
+            src="/newimg/img-5.jpeg"
             alt="fifth-img"
             width={300}
             height={300}
